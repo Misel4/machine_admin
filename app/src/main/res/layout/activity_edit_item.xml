@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditItemActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundcorner"
+        android:textColorHint="#000000">
+        <EditText
+            android:id="@+id/history_edit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColor="#000000"
+            android:background="@drawable/edit_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundcorner"
+        android:textColorHint="#000000">
+        <EditText
+            android:id="@+id/history_editNotes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColor="#000000"
+            android:background="@drawable/edit_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:background="@drawable/roundcorner">
+
+        <TextView
+            android:id="@+id/date_edit"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0.5"
+            android:text="Ημερομηνία:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/but_date_edit"
+            android:layout_width="70dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:drawablePadding="3dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="10dip"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/calendar"
+            android:textAllCaps="false"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/but_save"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.5"
+            android:text="Αποθήκευση"
+            android:background="@drawable/roundcorner"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/but_delete"
+            android:textAllCaps="false"
+            android:layout_gravity="top"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/roundcorner"
+            android:layout_height="45dp"
+            android:textColor="#000000"
+            android:text="Διαγραφή" />
+    </LinearLayout>
+
+</LinearLayout>

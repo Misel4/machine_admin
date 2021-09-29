@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <ListView
+        android:id="@+id/ListHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        tools:layout_editor_absoluteX="364dp"
+        tools:layout_editor_absoluteY="16dp">
+    </ListView>
+</LinearLayout>
+   <Button
+       android:layout_width="200dp"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:id="@+id/but_export"
+       android:text="Εξαγωγh σε Excel"
+       android:textAlignment="center" />
+
+
+</LinearLayout>
